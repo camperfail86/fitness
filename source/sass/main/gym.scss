@@ -1,0 +1,47 @@
+.gym {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+}
+
+.gym__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.gym__mini-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  margin: 25px 0 55px 0;
+}
+
+.gym__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.gym__information {
+  width: 355px;
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 767px) {
+
+}

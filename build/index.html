@@ -5,32 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <title>Фитнес</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo" href="index.html">SUPERGYM</a>
+        <a class="header__text" href="tel:+88005555555">8-800-555-55-55</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="description">
+        <div class="description__container">
+          <div class="description__info">
+            <p class="description__city">омск</p>
+            <div>
+              <p class="description__text">Тренажёрный зал Групповые занятия Кардио-зона </p>
+              <h1 class="description__title">Фитнес центр</h1>
+            </div>
+            <a class="description__button">Купить абонемент</a>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
+          <picture>
+            <!-- <source media="(min-resolution: 2ddpx)" srcset="./img/images/superman@2x.jpg"> -->
+            <img class="description__image" src="./img/images/superman.jpg" alt="">
+          </picture>
+        </div>
+      </section>
+      <section class="gym">
+        <div class="gym__information">
+          <h2 class="gym__title">Тренажерный зал</h2>
+          <p class="gym__mini-title">Просторный зал площадью 900 кв/м</p>
+          <p class="gym__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов. В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
+        </div>
+        <div class="gym__media">
+          <img class="gym__image" src="./img/images/gym.jpg" alt="Тренажерный зал.">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <!-- <video class="gym__video" poster="" controls>
+            <source src="https://www.youtube.com/watch?v=9TZXsZItgdw">
+          </video> -->
+        </div>
+      </section>
+      <!-- <section class="intro">
+        <div class="container">
+          <h1>Тестовая страница.</h1>
+          <p>На данной странице показан пример модальных окон.</p>
+          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
+          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        </div>
+      </section> -->
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
 
     <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
+    <!-- <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -42,9 +76,9 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -56,7 +90,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

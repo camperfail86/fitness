@@ -24,6 +24,16 @@
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
 
+// Header
+
+@import "header/header";
+
+// Main
+
+@import "main/description";
+@import "main/gym";
+
+
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
