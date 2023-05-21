@@ -1,0 +1,162 @@
+.free {
+  background: #102654;
+  display: grid;
+  min-height: 337px;
+  padding-left: 30px;
+}
+
+.free__container {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  width: 410px;
+  margin-right: 170px;
+}
+
+.free__title {
+  font-family: "Alumni Sans", sans-serif;
+  color: $color-default-white;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 156%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  margin-top: 56px;
+  margin-bottom: 24px;
+
+  & ~ div {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.free__button {
+  font-family: "Roboto Condensed", sans-serif;
+  color: $color-default-white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 3px solid $color-default-white;
+  margin-top: 27px;
+  padding: 16px 164px;
+  width: 78px;
+  box-sizing: content-box;
+  justify-content: flex-end;
+}
+
+.free__input {
+  border: none;
+  background-color: #102654;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #74819C;
+  width: 190px;
+  padding-bottom: 5px;
+
+  &::placeholder {
+    font-family: "Roboto Condensed", sans-serif;
+    color: $color-default-white;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .free__container {
+    justify-self: flex-start;
+    width: 472px;
+  }
+
+  .free {
+    padding-left: 133px;
+    min-height: 323px;
+  }
+
+  .free__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    margin-top: 61px;
+    margin-bottom: 37px;
+  }
+
+  .free__input {
+    width: 210px;
+
+    &:not(:last-child) {
+      margin-right: 58px;
+    }
+  }
+
+  .free__button {
+    padding: 18px 194px;
+  }
+}
+
+@media (max-width: 767px) {
+  .free {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 68px;
+  }
+
+  .free__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    margin-top: 64px;
+    margin-bottom: 39px;
+
+    & ~ div {
+      flex-direction: column;
+      width: 100%;
+      padding-right: 6px;
+    }
+  }
+
+  .free__button {
+    width: 100%;
+    padding: 17px 104px;
+    text-align: center;
+    margin-top: 38px;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .free__input:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .free__input {
+    width: 100%;
+  }
+
+  .free__container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .free__input--name {
+    margin-bottom: 37px;
+  }
+}

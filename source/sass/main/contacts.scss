@@ -1,0 +1,143 @@
+.contacts {
+  min-height: 337px;
+  border-top: 1px solid #74819C;
+}
+
+.contacts__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin-left: 120px;
+  margin-top: 56px;
+  margin-bottom: 37px;
+}
+
+.contacts__content {
+  display: flex;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #102654;
+  margin-left: 124px;
+}
+
+.contacts__mini-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+.contacts__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.contacts__left {
+  margin-right: 121px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 102px;
+    right: -62px;
+    top: 6px;
+    background-color: #74819C;
+  }
+}
+
+@media (max-width: 1199px) {
+  .contacts__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    margin-left: 133px;
+    margin-top: 61px;
+    margin-bottom: 32px;
+  }
+
+  .contacts {
+    min-height: 351px;
+  }
+
+  .contacts__mini-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+  }
+
+  .contacts__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 152.34%;
+    display: flex;
+    align-items: center;
+  }
+
+  .contacts__content {
+    margin-left: 133px;
+  }
+
+  .contacts__left::after {
+    height: 129px;
+    right: -50px;
+    top: 8px;
+  }
+
+  .contacts__left {
+    margin-right: 97px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    margin-left: 15px;
+    margin-top: 63px;
+    margin-bottom: 34px;
+  }
+
+  .contacts__left {
+    margin-right: 59px;
+
+    &::after {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .contacts__content {
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  .contacts {
+    padding-bottom: 42px;
+  }
+}

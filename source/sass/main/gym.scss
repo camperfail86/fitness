@@ -1,7 +1,13 @@
 .gym {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 235px;
   display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.gym__iframe {
+  border: none;
 }
 
 .gym__title {
@@ -16,6 +22,18 @@
   margin: 0;
 }
 
+.gym__media {
+  width: 660px;
+  height: 401px;
+  position: relative;
+}
+
+.gym__position {
+  position: absolute;
+  left: -61px;
+  bottom: -115px;
+}
+
 .gym__mini-title {
   font-style: normal;
   font-weight: 400;
@@ -23,7 +41,7 @@
   line-height: 150%;
   display: flex;
   align-items: center;
-  margin: 25px 0 55px 0;
+  margin: 7px 0 39px 0;
 }
 
 .gym__text {
@@ -32,16 +50,196 @@
   font-size: 16px;
   line-height: 150%;
   margin: 0;
+  width: 350px;
+}
+
+.gym__text-desktop {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 8px 0 0 0;
 }
 
 .gym__information {
-  width: 355px;
+  width: 498px;
+  padding: 39px 85px 0 60px;
+}
+
+.gym__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.gym__div {
+  position: relative;
+  width: 364px;
+  height: 228px;
+
+  &::after {
+    content: "";
+    background: rgba(20, 54, 122, 0.5);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  &::before {
+    content: url("../../img/svg/button-play.svg");
+    position: absolute;
+    top: 65px;
+    left: 132px;
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 1199px) {
+  .gym {
+    padding-top: 100px;
+    padding-bottom: 183px;
+    display: flex;
+    width: 678px;
+    margin: 0 auto;
+    flex-direction: column;
+    color: $color-black;
+  }
 
+  .gym__title {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    width: 276px;
+    margin: 0 auto;
+  }
+
+  .gym__mini-title {
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0 auto;
+    width: 279px;
+  }
+
+  .gym__text {
+    font-size: 16px;
+    line-height: 150%;
+    width: 100%;
+    text-align: center;
+    margin-top: 34px;
+  }
+
+  .gym__media {
+    width: 678px;
+  }
+
+  .gym__image {
+    width: 678px;
+  }
+
+  .gym__text-desktop {
+    display: none;
+  }
+
+  .gym__position {
+    left: 205px;
+    bottom: -28px;
+  }
+
+  .gym__information {
+    padding: 0 0 43px;
+    width: 502px;
+    margin: 0 auto;
+  }
+
+  .gym__div {
+    width: 266px;
+    height: 167px;
+
+    &::before {
+      content: url("../../img/svg/button-play-tablet-mobile.svg");
+      position: absolute;
+      top: 48px;
+      left: 99px;
+      z-index: 100;
+      width: 73px;
+      height: 73px;
+      cursor: pointer;
+    }
+  }
+
+  .gym__iframe {
+    width: 266px;
+    height: 167px;
+  }
 }
 
 @media (max-width: 767px) {
+  .gym__title {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0;
+  }
 
+  .gym__mini-title {
+    font-size: 18px;
+    line-height: 150%;
+    margin: 5px 0 0 0;
+  }
+
+  .gym__text {
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 24px;
+    width: 256px;
+    text-align: left;
+  }
+
+  .gym__media {
+    width: 100%;
+  }
+
+  .gym__image {
+    width: 320px;
+    height: 313px;
+  }
+
+  .gym {
+    padding-top: 64px;
+    margin: 0 auto;
+    width: 320px;
+  }
+
+  .gym__div {
+    width: 320px;
+
+    &::before {
+      top: 47px;
+      left: 124px;
+    }
+  }
+
+  .gym__video {
+    width: 320px;
+    height: 167px;
+  }
+
+  .gym__position {
+    left: 0;
+    bottom: -119px;
+  }
+
+  .gym__information {
+    margin: 0 15px 0 15px;
+    width: 280px;
+    padding: 0 0 33px;
+  }
 }

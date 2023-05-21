@@ -8,7 +8,6 @@
 }
 
 .description__container {
-  // width: 1122px;
   display: flex;
   box-sizing: content-box;
   margin: 0 auto;
@@ -192,5 +191,9 @@
     margin-right: -13px;
     width: 113px;
     padding-bottom: 31px;
+  }
+
+  .description {
+    padding-bottom: 79px;
   }
 }

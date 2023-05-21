@@ -3,7 +3,8 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
+
 
 // Global
 // ---------------------------------
@@ -32,6 +33,18 @@
 
 @import "main/description";
 @import "main/gym";
+@import "main/promo";
+@import "main/trainers";
+@import "main/contacts";
+@import "main/free";
+@import "main/data";
+@import "main/advantages";
+@import "main/simulators";
+
+// Footer
+
+@import "footer/footer";
+@import "footer/socials";
 
 
 // ---------------------------------
