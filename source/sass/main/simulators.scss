@@ -4,6 +4,8 @@
   padding-top: 34px;
   width: 240px;
   min-height: 307px;
+  position: absolute;
+  left: calc(50% - 120px);
 }
 
 .simulators__wrapper {
@@ -42,5 +44,45 @@
   text-align: center;
   justify-content: center;
   margin-top: 32px;
+}
+
+@media (max-width: 1199px) {
+  .simulators {
+    width: 442px;
+    margin: 0 auto;
+    min-height: 239px;
+    padding-bottom: 20px;
+    left: calc(50% - 221px);
+    top: 114px;
+    padding-top: 13px;
+  }
+
+  .simulators__mini-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 150%;
+    margin-top: -18px;
+  }
+
+  .simulators__text {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .simulators {
+    position: static;
+    width: 100%;
+    margin: 0;
+    padding-top: 19px;
+  }
+
+  .simulators__mini-title {
+    margin-top: -23px;
+  }
+
+  .simulators__text {
+    margin-top: 8px;
+  }
 }
 

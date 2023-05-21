@@ -1,0 +1,79 @@
+.actions__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin-top: 100px;
+  margin-bottom: 34px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 113px;
+}
+
+.actions__abonement {
+  background: #ED0233;
+}
+
+.actions__wrapper {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.actions {
+  padding-bottom: 113px;
+}
+
+@media (max-width: 1199px) {
+  .actions__wrapper {
+    display: flex;
+    width: 678px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .actions__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    width: 97px;
+    margin: 93px auto 40px;
+  }
+
+  .actions__info {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .actions {
+    padding: 0 15px;
+  }
+
+  .actions__wrapper {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .actions__info {
+    flex-direction: column;
+  }
+
+  .actions__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    width: 72px;
+    margin: 63px auto 42px;
+  }
+}

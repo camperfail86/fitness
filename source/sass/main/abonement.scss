@@ -1,0 +1,121 @@
+// font-family: "Roboto Condensed", sans-serif;
+.abonement {
+  width: 560px;
+  color: $color-default-white;
+  display: flex;
+  margin-right: 40px;
+
+  & div {
+    padding-left: 45px;
+    padding-top: 34px;
+    padding-bottom: 45px;
+    padding-right: 34px;
+  }
+}
+
+.abonement__button {
+  color: $color-default-white;
+}
+
+.abonement__title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 156%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.abonement__price {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.abonement__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-top: 27px;
+  margin-bottom: 188px;
+  width: 201px;
+}
+
+.abonement__button {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #FFFFFF;
+  width: 79px;
+  padding-bottom: 2px;
+}
+
+@media (max-width: 1199px) {
+  .abonement {
+    width: 678px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .abonement__image {
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .abonement {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+
+    & div {
+      width: 290px;
+      padding: 35px 45px 43px 45px;
+    }
+  }
+
+  .abonement__title {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .abonement__price {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .abonement__text {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 31px;
+    margin-top: 21px;
+  }
+
+  .abonement__button {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .abonement__image {
+    height: 299px;
+    width: 290px;
+  }
+}
+
