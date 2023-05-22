@@ -1,0 +1,137 @@
+.feedback__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin: 0 auto 37px;
+  width: 143px;
+}
+
+.feedback__img-mobile {
+  display: none;
+}
+
+.feedback {
+  padding-bottom: 120px;
+}
+
+.feedback__wrapper {
+  position: relative;
+  width: 560px;
+  margin: 0 auto;
+}
+
+.feedback__img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 8px;
+}
+
+.feedback__content {
+  color: #FFFFFF;
+  width: 328px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-left: 28px;
+}
+
+.feedback__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+}
+
+.feedback__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  margin-bottom: 0;
+  min-height: 90px;
+}
+
+@media (max-width: 1199px) {
+  .feedback__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    width: 122px;
+    margin: 0 auto 40px;
+  }
+
+  .feedback__wrapper {
+    width: 566px;
+  }
+
+  .feedback {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .feedback__wrapper {
+    width: 226px;
+  }
+
+  .feedback__img-mobile {
+    width: 68px;
+    height: 68px;
+    display: inline;
+    border-radius: 50%;
+  }
+
+  .feedback__img {
+    width: 68px;
+    height: 68px;
+    margin-left: 15px;
+  }
+
+  .feedback__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    position: absolute;
+    top: 49px;
+    left: 124px;
+    width: 100px;
+  }
+
+  .feedback__content {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .feedback__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    width: 92px;
+    margin: 0 auto 42px;
+  }
+
+  .feedback__text {
+    text-align: center;
+  }
+
+  .feedback {
+    padding-bottom: 70px;
+  }
+}

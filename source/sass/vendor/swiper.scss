@@ -23,7 +23,7 @@
 .swiper {
   margin-left: auto;
   margin-right: auto;
-  position: relative;
+  // position: relative;
   overflow: hidden;
   list-style: none;
   padding: 0;
@@ -616,6 +616,8 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+// Fisrt slider
+
 .swiper-button-prev {
   content: url("./../../img/svg/arrow.svg");
   position: absolute;
@@ -626,7 +628,10 @@ button.swiper-pagination-bullet {
   transform: rotate(180deg);
 }
 
-.swiper-slide {
+.swiper-slide--anna,
+.swiper-slide--alexey,
+.swiper-slide--alexander,
+.swiper-slide--maria {
   width: 260px;
   min-height: 294px;
   position: relative;
@@ -658,11 +663,91 @@ button.swiper-pagination-bullet {
   background-image: url('./../../img/images/alexey.jpg')
 }
 
-.swiper-slide-alexander {
+.swiper-slide--alexander {
   background-image: url('./../../img/images/aleksandr.jpg');
   background-position: center center;
 }
 
 .swiper-slide--maria {
   background-image: url('./../../img/images/maria.jpg')
+}
+
+// Second slider
+
+.swiper-button-prev--feedback {
+  top: 127px;
+  left: -56px;
+}
+
+.swiper-button-next--feedback {
+    top: 127px;
+    right: -56px;
+}
+
+.swiper-slide--user-orlova {
+  width: 560px;
+  padding-top: 54px;
+  padding-left: 62px;
+  padding-bottom: 55px;
+  display: flex;
+  background: #1C3374;
+  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);;
+}
+
+.mySwiper2 {
+  width: 560px;
+}
+
+.swiper-wrapper2 {
+  width: 560px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199px) {
+  .mySwiper2 {
+    width: 566px;
+  }
+
+  .swiper-wrapper2 {
+    width: 566px;
+    margin: 0 auto;
+  }
+
+  .swiper-slide--user-orlova {
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mySwiper2 {
+    width: 226px;
+  }
+
+  .swiper-wrapper2 {
+    width: 226px;
+    margin: 0 auto;
+  }
+
+  .swiper-slide--user-orlova {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 33px;
+    padding-bottom: 31px;
+    min-height: 335px;
+    flex-direction: column;
+  }
+
+  .swiper-button-next--feedback {
+    top: 180px;
+    right: -32px;
+    width: 10px;
+    height: 19px;
+  }
+
+  .swiper-button-prev--feedback {
+    top: 180px;
+    left: -32px;
+    width: 10px;
+    height: 19px;
+  }
 }

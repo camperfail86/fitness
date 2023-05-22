@@ -16,4 +16,15 @@ let swiper = new Swiper('.mySwiper', {
   keyboard: true,
 });
 
-
+let swiper2 = new Swiper('.mySwiper2', {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  keyboard: true,
+  mousewheel: true,
+});

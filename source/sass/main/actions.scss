@@ -25,7 +25,7 @@
 }
 
 .actions {
-  padding-bottom: 113px;
+  padding-bottom: 116px;
 }
 
 @media (max-width: 1199px) {
@@ -50,11 +50,15 @@
   .actions__info {
     display: flex;
   }
+
+  .actions {
+    padding-bottom: 91px;
+  }
 }
 
 @media (max-width: 767px) {
   .actions {
-    padding: 0 15px;
+    padding: 0 15px 32px;
   }
 
   .actions__wrapper {
