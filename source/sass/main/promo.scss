@@ -21,6 +21,7 @@
   margin: 0 auto;
   width: 1160px;
   padding-bottom: 106px;
+  padding-top: 120px;
 }
 
 .promo__image {
@@ -67,7 +68,6 @@
   margin: 0;
   width: 64px;
   position: relative;
-  // margin-bottom: 10px;
   padding-top: 13px;
 
   &::after {
@@ -162,6 +162,8 @@
 @media (max-width: 1199px) {
   .promo {
     width: 678px;
+    padding-top: 100px;
+    padding-bottom: 101px;
   }
 
   .promo__left {
@@ -226,7 +228,7 @@
     line-height: 150%;
     display: flex;
     align-items: center;
-    width: 47px
+    width: 47px;
   }
 
   .promo__time {
@@ -284,8 +286,10 @@
 
 @media (max-width: 767px) {
   .promo {
+    padding-top: 70px;
     width: 290px;
     flex-direction: column;
+    padding-bottom: 64px;
   }
 
   .promo__left {

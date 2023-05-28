@@ -23,11 +23,9 @@
 .swiper {
   margin-left: auto;
   margin-right: auto;
-  // position: relative;
   overflow: hidden;
   list-style: none;
   padding: 0;
-  /* Fix of Webkit flickering */
   z-index: 1;
 }
 .swiper-vertical > .swiper-wrapper {
@@ -183,8 +181,6 @@
 .swiper-button-next {
   position: absolute;
   top: 50%;
-  // width: calc(var(--swiper-navigation-size) / 44 * 27);
-  // height: var(--swiper-navigation-size);
   width: 16px;
   height: 32px;
   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
@@ -194,7 +190,6 @@
   align-items: center;
   justify-content: center;
   color: #AFAFAF;
-  // color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -649,7 +644,7 @@ button.swiper-pagination-bullet {
       content: "";
       background: rgba(16, 38, 84, 0.89);
       display: block;
-      width: 260px;
+      width: 268px;
       min-height: 294px;
     }
   }
@@ -664,7 +659,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-slide--alexander {
-  background-image: url('./../../img/images/aleksandr.jpg');
+  background-image: url('./../../img/images/alexander.png');
   background-position: center center;
 }
 
@@ -680,9 +675,20 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-button-next--feedback {
-    top: 127px;
-    right: -56px;
+  top: 127px;
+  right: -56px;
 }
+
+.swiper-button-next--trainers {
+  right: -57px;
+  top: 153px;
+}
+
+.swiper-button-prev--trainers {
+  left: -57px;
+  top: 153px;
+}
+
 
 .swiper-slide--user-orlova {
   width: 560px;
@@ -703,6 +709,20 @@ button.swiper-pagination-bullet {
   margin: 0 auto;
 }
 
+@media (max-width: 1300px) {
+  .swiper-slide--anna,
+  .swiper-slide--alexey,
+  .swiper-slide--maria {
+    width: 268px;
+    background-size: 268px 294px;
+    background-position: center center;
+  }
+
+  .swiper-slide--alexander {
+
+  }
+}
+
 @media (max-width: 1199px) {
   .mySwiper2 {
     width: 566px;
@@ -721,6 +741,20 @@ button.swiper-pagination-bullet {
 @media (max-width: 767px) {
   .mySwiper2 {
     width: 226px;
+  }
+
+  .swiper-slide--anna,
+  .swiper-slide--alexey,
+  .swiper-slide--maria,
+  .swiper-slide--alexander {
+    min-height: 274px;
+
+    &:hover {
+      &::before {
+        min-height: 274px;
+        width: 226px;
+      }
+    }
   }
 
   .swiper-wrapper2 {
@@ -747,6 +781,20 @@ button.swiper-pagination-bullet {
   .swiper-button-prev--feedback {
     top: 180px;
     left: -32px;
+    width: 10px;
+    height: 19px;
+  }
+
+  .swiper-button-prev--trainers {
+    left: -33px;
+    top: 150px;
+    width: 10px;
+    height: 19px;
+  }
+
+  .swiper-button-next--trainers {
+    right: -33px;
+    top: 150px;
     width: 10px;
     height: 19px;
   }

@@ -74,10 +74,33 @@
   cursor: pointer;
 }
 
+.gym__play {
+  content: "";
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  background-image: url("../../img/svg/button-play.svg");
+  position: absolute;
+  top: 65px;
+  left: 132px;
+  z-index: 100;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
 .gym__div {
   position: relative;
   width: 364px;
   height: 228px;
+  cursor: pointer;
+
+  &:hover {
+    &::before {
+      opacity: 0.9;
+    }
+  }
 
   &::after {
     content: "";
@@ -91,15 +114,15 @@
     z-index: 10;
   }
 
-  &::before {
-    content: url("../../img/svg/button-play.svg");
+  & iframe {
+    z-index: 20;
     position: absolute;
-    top: 65px;
-    left: 132px;
-    z-index: 100;
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -163,17 +186,21 @@
   .gym__div {
     width: 266px;
     height: 167px;
+  }
 
-    &::before {
-      content: url("../../img/svg/button-play-tablet-mobile.svg");
-      position: absolute;
-      top: 48px;
-      left: 99px;
-      z-index: 100;
-      width: 73px;
-      height: 73px;
-      cursor: pointer;
-    }
+  .gym__play {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    background-image: url("../../img/svg/button-play-tablet-mobile.svg");
+    position: absolute;
+    top: 48px;
+    left: 99px;
+    z-index: 100;
+    width: 73px;
+    height: 73px;
+    cursor: pointer;
   }
 
   .gym__iframe {
@@ -193,6 +220,11 @@
     font-size: 18px;
     line-height: 150%;
     margin: 5px 0 0 0;
+  }
+
+  .gym__play {
+    top: 47px;
+    left: 124px;
   }
 
   .gym__text {
@@ -216,6 +248,7 @@
     padding-top: 64px;
     margin: 0 auto;
     width: 320px;
+    padding-bottom: 190px;
   }
 
   .gym__div {

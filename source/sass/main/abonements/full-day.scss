@@ -1,0 +1,146 @@
+.full-day__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #102654;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.full-day__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #495a7d;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 64px;
+
+  & + div {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.full-day {
+  padding-top: 63px;
+
+  &:hover {
+    padding-top: 56px;
+  }
+}
+
+.full-day__price--1-background {
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #e8e8e8;
+  opacity: 0.48;
+  top: -52px;
+  margin: auto;
+  user-select: none;
+}
+
+.full-day__price {
+  z-index: 1;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #103aae;
+  justify-content: center;
+}
+
+.full-day__price-ruble {
+  color: #102654;
+  margin-left: 14px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.full-day__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width: 209px;
+  padding: 24px 44px;
+  margin: 35px auto 0 auto;
+  border: 2px solid #102654;
+
+  &:hover {
+    color: $color-default-white;
+    padding: 26px 46px;
+    border: none;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
+}
+
+@media (max-width: 1199px) {
+  .full-day__title {
+    line-height: 29px;
+  }
+}
+
+@media (max-width: 767px) {
+  .full-day__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .full-day {
+    padding-top: 50px;
+    min-height: 384px;
+
+    &:hover {
+      padding-top: 43px;
+    }
+  }
+
+  .full-day__price {
+    padding-left: 10px;
+    font-size: 48px;
+  }
+
+  .full-day__price-ruble {
+    font-size: 48px;
+    margin-left: 8px;
+  }
+
+  .full-day__price--1-background {
+    font-size: 80px;
+    top: -44px;
+  }
+
+  .full-day__text {
+    margin-bottom: 53px;
+  }
+
+  .full-day__button {
+    margin-top: 30px;
+  }
+}

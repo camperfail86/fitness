@@ -41,11 +41,10 @@
               <p class="description__text">Тренажёрный зал Групповые занятия Кардио-зона </p>
               <h1 class="description__title">Фитнес центр</h1>
             </div>
-            <a class="description__button">Купить абонемент</a>
+            <a class="description__button" href="#abonement">Купить абонемент</a>
           </div>
           <picture>
-            <!-- <source media="(min-resolution: 2ddpx)" srcset="./img/images/superman@2x.jpg"> -->
-            <img class="description__image" src="./img/images/superman.jpg" alt="">
+            <img class="description__image" width="500" height="556" src="./img/images/superman.jpg" alt="Мужчина в костюме супермена.">
           </picture>
         </div>
       </section>
@@ -60,17 +59,55 @@
           <picture>
             <source media="(max-width: 767px)" srcset="./img/images/gym-mobile.jpg">
             <source media="(max-width: 1199px)" srcset="./img/images/gym-tablet.jpg">
-            <img class="gym__image" src="./img/images/gym.jpg" alt="Тренажерный зал.">
+            <img class="gym__image" width="660" height="401" src="./img/images/gym.jpg" alt="Тренажерный зал.">
           </picture>
           <div class="gym__position">
             <div class="gym__div">
               <img class="gym__video" width="364" height="228" src="./img/images/video.jpg" alt="Заставка видео.">
-              <iframe class="gym__iframe" width="364" height="200" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <button class="gym__play"></button>
             </div>
           </div>
-          <!-- <video class="gym__video" poster="" controls>
-            <source src="https://www.youtube.com/watch?v=9TZXsZItgdw">
-          </video> -->
+        </div>
+      </section>
+      <section class="abonements"  id="abonement">
+        <div class="abonements__wrapper">
+          <h2 class="abonements__title">Абонементы</h2>
+          <nav class="abonements__nav">
+            <ul class="abonements__list">
+              <li class="abonements__item abonements__item--active" id="one-month">1 месяц</li>
+              <li class="abonements__item" id="six-month">6 месяцев</li>
+              <li class="abonements__item" id="twelf-month">12 месяцев</li>
+            </ul>
+          </nav>
+          <div class="abonements__content">
+            <section class="abonements__treners treners">
+              <h3 class="treners__title">С тренером</h3>
+              <p class="treners__text">12 занятий</p>
+              <div>
+                <span class="treners__price treners__price--1 treners__price--active">5000</span><span class="treners__price-ruble">₽</span>
+                <div class="treners__price--1-background">5000</div>
+              </div>
+              <a class="treners__button" href="#">купить абонемент</a>
+            </section>
+            <section class="abonements__day day">
+              <h3 class="day__title">Дневной</h3>
+              <p class="day__text">с 8:00 до 17:00</p>
+              <div>
+                <span class="day__price day__price--1 day__price--active">1700</span><span class="day__price-ruble">₽</span>
+                <div class="day__price--1-background">1700</div>
+              </div>
+              <a class="day__button" href="#">купить абонемент</a>
+            </section>
+            <section class="abonements__full-day full-day">
+              <h3 class="full-day__title">Полный день</h3>
+              <p class="full-day__text">с 8:00 до 22:00 </p>
+              <div>
+                <span class="full-day__price full-day__price--1 full-day__price--active">2700</span><span class="full-day__price-ruble">₽</span>
+                <div class="full-day__price--1-background">2700</div>
+              </div>
+              <a class="full-day__button" href="#">купить абонемент</a>
+            </section>
+          </div>
         </div>
       </section>
       <section class="promo">
@@ -98,9 +135,116 @@
           <picture class="promo__image">
             <source media="(max-width: 767px)" srcset="./img/images/swimmer-mobile.png">
             <source media="(max-width: 1199px)" srcset="./img/images/swimmer-tablet.png">
-            <img src="./img/images/swimmer.png" alt="Пловец.">
+            <img src="./img/images/swimmer.png" width="660" height="500" alt="Пловец.">
           </picture>
 
+        </div>
+      </section>
+      <section class="trainers">
+        <h2 class="trainers__title">Тренеры</h2>
+        <div class="trainers__wrapper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--anna">
+                <h3 class="trainers__mini-title">Анна Павлова</h3>
+                <div class="trainers__info">
+                  <h3>Анна Павлова</h3>
+                  <p>CrossFit</p>
+                  <ul class="trainers__list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--alexey">
+                <h3 class="trainers__mini-title">Алексей Лавров</h3>
+                <div class="trainers__info">
+                  <h3>Алексей Лавров</h3>
+                  <p>CrossFit</p>
+                  <ul class="trainers__list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--alexander">
+                <h3 class="trainers__mini-title">Александр Пашков</h3>
+                <div class="trainers__info">
+                  <h3>Александр Пашков</h3>
+                  <p>CrossFit</p>
+                  <ul class="trainers__list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--maria">
+                <h3 class="trainers__mini-title">Мария Кетова</h3>
+                <div class="trainers__info">
+                  <h3>Мария Кетова</h3>
+                  <p>CrossFit</p>
+                  <ul class="trainers__list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--alexander">
+                <h3 class="trainers__mini-title">Александр Пашков</h3>
+                <div class="trainers__info">
+                  <h3>Александр Пашков</h3>
+                  <p>CrossFit</p>
+                  <ul class="trainers__list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--anna">
+                <h3 class="trainers__mini-title">Анна Павлова</h3>
+                <div class="trainers__info">
+                  <h3>Анна Павлова</h3>
+                  <p>CrossFit</p>
+                  <ul class="trainers__list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--anna">
+                <h3 class="trainers__mini-title">Анна Павлова</h3>
+                <div class="trainers__info">
+                  <h3>Анна Павлова</h3>
+                  <p>CrossFit</p>
+                  <ul class="trainers__list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--alexey">
+                <h3 class="trainers__mini-title">Алексей Лавров</h3>
+                <div class="trainers__info">
+                  <h3>Алексей Лавров</h3>
+                  <p>CrossFit</p>
+                  <ul class="trainers__list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next--trainers"></div>
+            <div class="swiper-button-prev swiper-button-prev--trainers"></div>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -174,7 +318,7 @@
             <picture>
               <source media="(max-width: 1199px)" srcset="./img/images/stock-tablet.png">
               <source media="(max-width: 767px)" srcset="./img/images/stock-mobile.png">
-              <img class="abonement__image" src="./img/images/stock.png" alt="Девушка в спортивной форме.">
+              <img class="abonement__image" width="280" height="462" src="./img/images/stock.png" alt="Девушка в спортивной форме.">
             </picture>
 
           </section>
@@ -200,7 +344,6 @@
               <div class="swiper-slide swiper-slide--user-orlova">
                 <img class="feedback__img" src="./img/reviews/review-anna.jpg" alt="Аватар.">
                 <div class="feedback__content">
-                  <!-- <img class="feedback__img-mobile" src="./img/reviews/review-mobile-anna.jpg"> -->
                   <span class="feedback__name">Анна Орлова</span>
                   <p class="feedback__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
@@ -218,148 +361,18 @@
           </div>
         </div>
       </section>
-      <!-- <section class="trainers">
-        <h2 class="trainers__title">Тренеры</h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide--anna">
-              <h3 class="trainers__mini-title">Анна Павлова</h3>
-              <div class="trainers__info">
-                <h3>Анна Павлова</h3>
-                <p>CrossFit</p>
-                <ul class="trainers__list">
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit </li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide--alexey">
-              <h3 class="trainers__mini-title">Алексей Лавров</h3>
-              <div class="trainers__info">
-                <h3>Алексей Лавров</h3>
-                <p>CrossFit</p>
-                <ul class="trainers__list">
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit </li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide--alexander">
-              <h3 class="trainers__mini-title">Александр Пашков</h3>
-              <div class="trainers__info">
-                <h3>Александр Пашков</h3>
-                <p>CrossFit</p>
-                <ul class="trainers__list">
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit </li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide--maria">
-              <h3 class="trainers__mini-title">Мария Кетова</h3>
-              <div class="trainers__info">
-                <h3>Мария Кетова</h3>
-                <p>CrossFit</p>
-                <ul class="trainers__list">
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit </li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide-alexander">
-              <h3 class="trainers__mini-title">Александр Пашков</h3>
-              <div class="trainers__info">
-                <h3>Александр Пашков</h3>
-                <p>CrossFit</p>
-                <ul class="trainers__list">
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit </li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide--anna">
-              <h3 class="trainers__mini-title">Анна Павлова</h3>
-              <div class="trainers__info">
-                <h3>Анна Павлова</h3>
-                <p>CrossFit</p>
-                <ul class="trainers__list">
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit </li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide--anna">
-              <h3 class="trainers__mini-title">Анна Павлова</h3>
-              <div class="trainers__info">
-                <h3>Анна Павлова</h3>
-                <p>CrossFit</p>
-                <ul class="trainers__list">
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit </li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide--alexey">
-              <h3 class="trainers__mini-title">Алексей Лавров</h3>
-              <div class="trainers__info">
-                <h3>Алексей Лавров</h3>
-                <p>CrossFit</p>
-                <ul class="trainers__list">
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit </li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-        <!-- <ul class="trainers__list">
-          <li class="trainers__item">
-            <h3 class="trainers__mini-title">Анна Павлова</h3>
-            <div class="trainers__info">
-              <h3>Анна Павлова</h3>
-              <p>CrossFit</p>
-              <ul>
-                <li>Certified Level 3 Trainer</li>
-                <li>Победитель чемпионата России по CrossFit </li>
-                <li>Опыт — 6 лет</li>
-              </ul>
-            </div>
-          </li>
-          <li class="trainers__item"></li>
-          <li class="trainers__item"></li>
-          <li class="trainers__item"></li>
-        </ul> -->
-      <!-- </section> -->
-
-      <!-- <section class="intro">
-        <div class="container">
-          <h1>Тестовая страница.</h1>
-          <p>На данной странице показан пример модальных окон.</p>
-          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-        </div>
-      </section> -->
 
       <div class="data">
         <section class="free">
           <div class="free__container">
-            <h2 class="free__title">Бесплатное занятие </h2>
-            <div>
-              <input class="free__input free__input--name" type="text" placeholder="Имя">
-              <input class="free__input free__input--tel" type="text" placeholder="Телефон">
-            </div>
-            <a class="free__button" href="">отправить</a>
+            <form action="https://echo.htmlacademy.ru/">
+              <h2 class="free__title">Бесплатное занятие </h2>
+              <div>
+                <input class="free__input free__input--name" type="text" placeholder="Имя" name="name" required>
+                <input class="free__input free__input--tel" type="text" placeholder="Телефон" name="telephone" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" maxlength="11" required>
+              </div>
+              <a class="free__button" href="">отправить</a>
+            </form>
           </div>
         </section>
         <section class="contacts">
@@ -424,35 +437,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

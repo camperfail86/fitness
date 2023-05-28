@@ -13,10 +13,6 @@
   }
 }
 
-.abonement__button {
-  color: $color-default-white;
-}
-
 .abonement__title {
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
@@ -61,9 +57,10 @@
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid $color-default-white;
   width: 79px;
   padding-bottom: 2px;
+  color: $color-default-white;
 }
 
 @media (max-width: 1199px) {
@@ -118,4 +115,3 @@
     width: 290px;
   }
 }
-

@@ -1,0 +1,147 @@
+.day__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #102654;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.day__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #495a7d;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 64px;
+
+  & + div {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.day__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width: 209px;
+  padding: 24px 44px;
+  margin: 35px auto 0 auto;
+  border: 2px solid #102654;
+
+  &:hover {
+    color: $color-default-white;
+    padding: 26px 46px;
+    border: none;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
+}
+
+.day__price {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #103aae;
+  justify-content: center;
+  z-index: 1;
+}
+
+.day__price-ruble {
+  color: #102654;
+  margin-left: 14px;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+}
+
+.day {
+  padding-top: 63px;
+
+  &:hover {
+    padding-top: 56px;
+  }
+}
+
+.day__price--1-background {
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #e8e8e8;
+  opacity: 0.48;
+  top: -52px;
+  margin: auto;
+  user-select: none;
+}
+
+@media (max-width: 1199px) {
+  .day__title {
+    line-height: 29px;
+  }
+}
+
+@media (max-width: 767px) {
+  .day__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .day__text {
+    margin-bottom: 54px;
+  }
+
+  .day__price {
+    padding-left: 10px;
+    font-size: 48px;
+  }
+
+  .day {
+    padding-top: 50px;
+    min-height: 384px;
+
+    &:hover {
+      padding-top: 43px;
+      min-height: 384px;
+    }
+  }
+
+  .day__price-ruble {
+    font-size: 48px;
+    margin-left: 8px;
+  }
+
+  .day__price--1-background {
+    font-size: 80px;
+    top: -44px;
+  }
+
+  .day__button {
+    margin-top: 30px;
+  }
+}
