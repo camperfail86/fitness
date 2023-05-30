@@ -1,8 +1,9 @@
 // Swiper 7.4.1
 import './vendor/swiper';
 import './vendor/focus-visible-polyfill';
+// import {Swiper} from './vendor/swiper';
 
-let swiper = new Swiper('.mySwiper', {
+const swiper1 = new Swiper('.mySwiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -33,7 +34,7 @@ let swiper = new Swiper('.mySwiper', {
   },
 });
 
-let swiper2 = new Swiper('.mySwiper2', {
+const swiper2 = new Swiper('.mySwiper2', {
   slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-button-next',

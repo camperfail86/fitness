@@ -10178,3 +10178,4 @@ const swiper = () => {
 };
 
 export default swiper();
+// export const Swiper = new swiper();
