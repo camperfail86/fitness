@@ -61,6 +61,10 @@
   width: 79px;
   padding-bottom: 2px;
   color: $color-default-white;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: 1199px) {

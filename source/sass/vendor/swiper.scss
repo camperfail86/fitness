@@ -614,12 +614,12 @@ button.swiper-pagination-bullet {
 // Fisrt slider
 
 .swiper-button-prev {
-  content: url("./../../img/svg/arrow.svg");
+  content: url("././../img/svg/arrow.svg");
   position: absolute;
 }
 
 .swiper-button-next {
-  content: url("./../../img/svg/arrow.svg");
+  content: url("././../img/svg/arrow.svg");
   transform: rotate(180deg);
 }
 
@@ -651,20 +651,20 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-slide--anna {
-  background-image: url('./../../img/images/anna.jpg')
+  background-image: url('././../img/images/anna.jpg')
 }
 
 .swiper-slide--alexey {
-  background-image: url('./../../img/images/alexey.jpg')
+  background-image: url('././../img/images/alexey.jpg')
 }
 
 .swiper-slide--alexander {
-  background-image: url('./../../img/images/alexander.png');
+  background-image: url('././../img/images/alexander.png');
   background-position: center center;
 }
 
 .swiper-slide--maria {
-  background-image: url('./../../img/images/maria.jpg')
+  background-image: url('././../img/images/maria.jpg')
 }
 
 // Second slider

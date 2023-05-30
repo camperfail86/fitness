@@ -7,7 +7,7 @@
   &::after {
     width: 287px;
     height: 436px;
-    background-image: url("../../img/images/pancake.png");
+    background-image: url("./../img/images/pancake.png");
     position: absolute;
     bottom: -92px;
     content: "";
@@ -158,7 +158,7 @@
     &::after {
       width: 347px;
       height: 436px;
-      background-image: url("../../img/images/pancake-tablet.png");
+      background-image: url("./../img/images/pancake-tablet.png");
       position: absolute;
       bottom: -117px;
       content: "";
