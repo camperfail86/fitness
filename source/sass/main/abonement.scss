@@ -1,4 +1,3 @@
-// font-family: "Roboto Condensed", sans-serif;
 .abonement {
   width: 560px;
   color: $color-default-white;
@@ -84,11 +83,9 @@
   .abonement {
     display: flex;
     flex-direction: column;
-    // width: 290px;
     width: auto;
 
     & div {
-      // width: 290px;
       width: auto;
       padding: 35px 45px 43px 45px;
     }
