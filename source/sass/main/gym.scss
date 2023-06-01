@@ -213,13 +213,15 @@
   .gym__title {
     font-size: 32px;
     line-height: 38px;
-    margin: 0;
+    margin: 0 auto;
+    width: 290px;
   }
 
   .gym__mini-title {
     font-size: 18px;
     line-height: 150%;
-    margin: 5px 0 0 0;
+    margin: 5px auto 0;
+    width: 290px;
   }
 
   .gym__play {
@@ -231,12 +233,15 @@
     font-size: 16px;
     line-height: 150%;
     margin-top: 24px;
-    width: 256px;
+    // min-width: 256px;
+    width: auto;
     text-align: left;
+    padding-right: 30px;
   }
 
   .gym__media {
-    width: 100%;
+    width: 320px;
+    margin: 0 auto;
   }
 
   .gym__image {
@@ -247,7 +252,7 @@
   .gym {
     padding-top: 64px;
     margin: 0 auto;
-    width: 320px;
+    width: auto;
     padding-bottom: 190px;
   }
 
@@ -272,7 +277,7 @@
 
   .gym__information {
     margin: 0 15px 0 15px;
-    width: 280px;
+    width: auto;
     padding: 0 0 33px;
   }
 }

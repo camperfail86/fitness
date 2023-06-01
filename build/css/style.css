@@ -1340,6 +1340,7 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: auto;
   background: #1C3374;
   -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
   box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
@@ -2258,6 +2259,8 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .header__logo {
@@ -2267,6 +2270,7 @@ button,
   font-weight: 600;
   font-size: 38px;
   line-height: 41px;
+  padding-top: 10px;
 }
 
 .header__text {
@@ -2277,6 +2281,7 @@ button,
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  margin: 0 20px;
 }
 
 .description {
@@ -2523,7 +2528,7 @@ button,
   width: 500px;
   min-height: 500px;
   color: #ffffff;
-  padding: 68px 0 0 78px;
+  padding: 68px 0 40px 78px;
 }
 
 .promo__left div {
@@ -2831,6 +2836,8 @@ button,
   flex-direction: column;
   padding-left: 26px;
   color: #ffffff;
+  max-height: 124px;
+  overflow-y: auto;
 }
 
 .trainers__list li {
@@ -3007,6 +3014,11 @@ button,
   -ms-flex-pack: end;
   justify-content: flex-end;
   background: #102654;
+  cursor: pointer;
+}
+
+.free__button:hover {
+  opacity: 0.8;
 }
 
 .free__input[type=text] {
@@ -3714,6 +3726,8 @@ button,
   margin: 17px auto 0;
   width: 341px;
   position: relative;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .abonements__list::after {
@@ -3733,6 +3747,8 @@ button,
   gap: 40px;
   margin-top: 51px;
   position: relative;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .abonements__full-day {
@@ -3745,6 +3761,7 @@ button,
   width: 360px;
   min-height: 448px;
   background-color: #ffffff;
+  padding-bottom: 30px;
 }
 
 .abonements__day:hover,
@@ -3804,8 +3821,14 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   z-index: 1;
+  max-width: 254px;
+  overflow: visible;
+  word-break: break-word;
 }
 
 .day__button {
@@ -3850,6 +3873,7 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   z-index: 1;
+  word-wrap: break-word;
 }
 
 .day__price-ruble {
@@ -3945,6 +3969,8 @@ button,
   justify-content: center;
   position: relative;
   z-index: 1;
+  word-break: break-word;
+  max-width: 254px;
 }
 
 .full-day {
@@ -4084,6 +4110,8 @@ button,
   justify-content: center;
   position: relative;
   z-index: 1;
+  word-break: break-word;
+  max-width: 254px;
 }
 
 .treners__price {
@@ -4184,6 +4212,12 @@ button,
   min-height: 108px;
 }
 
+.footer__navigation {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
 .footer__container {
   width: 1160px;
   margin: 0 auto;
@@ -4219,6 +4253,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer__left {
@@ -4328,8 +4364,14 @@ button,
     background-position: center center;
   }
 
+  .swiper-slide--anna:hover::before,
+  .swiper-slide--alexey:hover::before,
+  .swiper-slide--maria:hover::before {
+    width: 268px;
+  }
+
   .trainers {
-    width: 566px;
+    width: 860px;
   }
 
   .trainers__title {
@@ -4367,6 +4409,9 @@ button,
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.02em;
+    width: 82px;
+    height: 23px;
+    padding-top: 8px;
   }
 
   .header__text {
@@ -4384,6 +4429,7 @@ button,
   .description {
     padding-top: 82px;
     padding-bottom: 82px;
+    background: conic-gradient(from 155.49deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .description__city {
@@ -4706,6 +4752,7 @@ button,
 
   .trainers {
     padding-bottom: 100px;
+    width: 566px;
   }
 
   .contacts__title {
@@ -4979,6 +5026,7 @@ button,
 
   .abonement__image {
     height: 100%;
+    width: 399px;
   }
 
   .discount {
@@ -5119,6 +5167,8 @@ button,
     align-items: center;
     letter-spacing: 0.02em;
     padding-top: 0;
+    width: 82px;
+    height: 18px;
   }
 
   .footer__item {
@@ -5132,6 +5182,8 @@ button,
 
   .footer__navigation {
     padding-left: 7px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
   }
 
   .socials__item a {
@@ -5254,6 +5306,9 @@ button,
     -ms-flex-align: center;
     align-items: center;
     letter-spacing: 0.02em;
+    width: 67px;
+    height: 24px;
+    padding-top: 0;
   }
 
   .header__text {
@@ -5317,18 +5372,21 @@ button,
 
   .description {
     padding-bottom: 79px;
+    background: conic-gradient(from 167.26deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .gym__title {
     font-size: 32px;
     line-height: 38px;
-    margin: 0;
+    margin: 0 auto;
+    width: 290px;
   }
 
   .gym__mini-title {
     font-size: 18px;
     line-height: 150%;
-    margin: 5px 0 0 0;
+    margin: 5px auto 0;
+    width: 290px;
   }
 
   .gym__play {
@@ -5340,12 +5398,14 @@ button,
     font-size: 16px;
     line-height: 150%;
     margin-top: 24px;
-    width: 256px;
+    width: auto;
     text-align: left;
+    padding-right: 30px;
   }
 
   .gym__media {
-    width: 100%;
+    width: 320px;
+    margin: 0 auto;
   }
 
   .gym__image {
@@ -5356,7 +5416,7 @@ button,
   .gym {
     padding-top: 64px;
     margin: 0 auto;
-    width: 320px;
+    width: auto;
     padding-bottom: 190px;
   }
 
@@ -5381,33 +5441,57 @@ button,
 
   .gym__information {
     margin: 0 15px 0 15px;
-    width: 280px;
+    width: auto;
     padding: 0 0 33px;
   }
 
   .promo {
     padding-top: 70px;
-    width: 290px;
+    width: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     padding-bottom: 64px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .promo__button {
+    margin: 0 auto;
+  }
+
+  .promo__main {
+    width: 202px;
+    margin: -1px auto 30px;
   }
 
   .promo__left {
-    width: 290px;
+    width: auto;
     min-height: 292px;
+    padding-left: 0;
+  }
+
+  .promo__content {
+    margin: 0 auto;
+    width: 247px;
+    padding-left: 29px;
   }
 
   .promo__right {
-    width: 290px;
+    width: auto;
     min-height: 292px;
   }
 
   .promo__image {
     width: 290px;
     min-height: 292px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .promo__title {
+    margin-right: 34px;
   }
 
   .trainers__title {
@@ -5641,8 +5725,8 @@ button,
     -ms-flex-align: center;
     align-items: center;
     letter-spacing: 0.03em;
-    width: auto;
     margin: 0 auto 29px;
+    width: 318px;
   }
 
   .advantages__content {
@@ -5696,8 +5780,8 @@ button,
   }
 
   .actions__wrapper {
-    width: 290px;
     margin: 0 auto;
+    width: auto;
   }
 
   .actions__info {
@@ -5730,11 +5814,11 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 290px;
+    width: auto;
   }
 
   .abonement div {
-    width: 290px;
+    width: auto;
     padding: 35px 45px 43px 45px;
   }
 
@@ -5759,6 +5843,8 @@ button,
     justify-content: center;
     margin-bottom: 31px;
     margin-top: 21px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .abonement__button {
@@ -5772,11 +5858,12 @@ button,
   .abonement__image {
     height: 299px;
     width: 290px;
+    margin: 0 auto;
   }
 
   .discount {
     margin-left: 0;
-    width: 290px;
+    width: auto;
     padding: 29px 0 40px;
     margin-bottom: 30px;
   }
@@ -5802,7 +5889,7 @@ button,
   }
 
   .month {
-    width: 290px;
+    width: auto;
     padding: 29px 0 40px;
     margin-bottom: 30px;
   }
@@ -6082,7 +6169,9 @@ button,
     -ms-flex-align: center;
     align-items: center;
     letter-spacing: 0.02em;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
+    width: 68px;
+    height: 15px;
   }
 
   .footer__left {
@@ -6117,6 +6206,8 @@ button,
 
   .footer__navigation {
     padding-left: 0;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
 
   .socials__item {

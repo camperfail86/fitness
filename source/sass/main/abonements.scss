@@ -70,6 +70,7 @@
   margin: 17px auto 0;
   width: 341px;
   position: relative;
+  flex-wrap: wrap;
 
   &::after {
     position: absolute;
@@ -87,6 +88,7 @@
   gap: 40px;
   margin-top: 51px;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .abonements__full-day {
@@ -99,6 +101,7 @@
   width: 360px;
   min-height: 448px;
   background-color: $color-default-white;
+  padding-bottom: 30px;
 
   &:hover {
     box-sizing: border-box;

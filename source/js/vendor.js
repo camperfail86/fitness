@@ -2,7 +2,6 @@
 import './vendor/swiper';
 import './vendor/focus-visible-polyfill';
 import Swiper from './vendor/swiper';
-// import {Swiper} from './vendor/swiper';
 
 const swiper1 = new Swiper('.mySwiper', {
   navigation: {
@@ -12,13 +11,17 @@ const swiper1 = new Swiper('.mySwiper', {
   pagination: {
     el: '.swiper-pagination',
   },
-  mousewheel: true,
   keyboard: true,
   loop: true,
 
   breakpoints: {
     1300: {
       slidesPerView: 4,
+      spaceBetween: 40,
+      slideToClickedSlide: true,
+    },
+    1199: {
+      slidesPerView: 3,
       spaceBetween: 40,
       slideToClickedSlide: true,
     },

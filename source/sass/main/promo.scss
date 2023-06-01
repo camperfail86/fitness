@@ -3,7 +3,7 @@
   width: 500px;
   min-height: 500px;
   color: $color-default-white;
-  padding: 68px 0 0 78px;
+  padding: 68px 0 40px 78px;
 }
 
 .promo__left div {
@@ -287,23 +287,50 @@
 @media (max-width: 767px) {
   .promo {
     padding-top: 70px;
-    width: 290px;
+    // width: 290px;
+    width: auto;
     flex-direction: column;
     padding-bottom: 64px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .promo__button {
+    margin: 0 auto;
+  }
+
+  .promo__main {
+    width: 202px;
+    margin: -1px auto 30px;
   }
 
   .promo__left {
-    width: 290px;
+    // width: 290px;
+    width: auto;
     min-height: 292px;
+    padding-left: 0;
+  }
+
+  .promo__content{
+    margin: 0 auto;
+    width: 247px;
+    padding-left: 29px;
   }
 
   .promo__right {
-    width: 290px;
+    // width: 290px;
+    width: auto;
     min-height: 292px;
   }
 
   .promo__image {
     width: 290px;
     min-height: 292px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .promo__title {
+    margin-right: 34px;
   }
 }

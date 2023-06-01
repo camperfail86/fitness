@@ -27,8 +27,12 @@
     display: flex;
     margin: 0 auto;
     justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 1;
+    max-width: 254px;
+    overflow: visible;
+    word-break: break-word;
   }
 }
 
@@ -63,6 +67,7 @@
   color: #103aae;
   justify-content: center;
   z-index: 1;
+  word-wrap: break-word;
 }
 
 .day__price-ruble {

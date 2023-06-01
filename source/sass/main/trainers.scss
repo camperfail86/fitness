@@ -80,6 +80,8 @@
   flex-direction: column;
   padding-left: 26px;
   color: #ffffff;
+  max-height: 124px;
+  overflow-y: auto;
 
   & li {
     font-family: "Roboto Condensed", sans-serif;
@@ -108,7 +110,8 @@
 
 @media (max-width: 1300px) {
   .trainers {
-    width: 566px;
+    // width: 566px;
+    width: 860px;
   }
 
   .trainers__title {
@@ -135,6 +138,7 @@
 
   .trainers {
     padding-bottom: 100px;
+    width: 566px;
   }
 }
 

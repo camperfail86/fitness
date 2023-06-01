@@ -50,6 +50,11 @@
   box-sizing: content-box;
   justify-content: flex-end;
   background: #102654;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .free__input[type="text"] {

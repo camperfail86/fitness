@@ -696,6 +696,7 @@ button.swiper-pagination-bullet {
   padding-left: 62px;
   padding-bottom: 55px;
   display: flex;
+  height: auto;
   background: #1C3374;
   box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);;
 }
@@ -716,10 +717,12 @@ button.swiper-pagination-bullet {
     width: 268px;
     background-size: 268px 294px;
     background-position: center center;
-  }
 
-  .swiper-slide--alexander {
-
+    &:hover {
+      &::before {
+        width: 268px;
+      }
+    }
   }
 }
 
