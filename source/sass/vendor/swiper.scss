@@ -648,6 +648,24 @@ button.swiper-pagination-bullet {
       min-height: 294px;
     }
   }
+
+  &:focus-visible {
+    .trainers__mini-title {
+      display: none;
+    }
+
+    .trainers__info {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      background: rgba(16, 38, 84, 0.89);
+      display: block;
+      width: 260px;
+      min-height: 294px;
+    }
+  }
 }
 
 .swiper-slide--anna {
@@ -723,6 +741,28 @@ button.swiper-pagination-bullet {
         width: 268px;
       }
     }
+
+    &:focus-visible {
+      &::before {
+        width: 268px;
+      }
+    }
+  }
+
+  .swiper-slide--alexander {
+    background-size: 336px 368px;
+
+    &:hover {
+      &::before {
+        width: 268px;
+      }
+    }
+
+    &:focus-visible {
+      &::before {
+        width: 268px;
+      }
+    }
   }
 }
 
@@ -753,6 +793,13 @@ button.swiper-pagination-bullet {
     min-height: 274px;
 
     &:hover {
+      &::before {
+        min-height: 274px;
+        width: 226px;
+      }
+    }
+
+    &:focus-visible {
       &::before {
         min-height: 274px;
         width: 226px;

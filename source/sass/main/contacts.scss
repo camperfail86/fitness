@@ -44,6 +44,11 @@
   display: flex;
   align-items: center;
   margin-bottom: 18px;
+  flex-wrap: wrap;
+
+  & a {
+    margin-right: 10px;
+  }
 }
 
 .contacts__left {

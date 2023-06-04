@@ -1,10 +1,18 @@
 .data {
   display: grid;
   grid-template-columns: 50% 50%;
+  padding-bottom: 108px;
 }
 
 @media (max-width: 1199px) {
   .data {
     grid-template-columns: 100%;
+    padding-bottom: 109px;
+  }
+}
+
+@media (max-width: 767px) {
+  .data {
+    padding-bottom: 257px;
   }
 }
