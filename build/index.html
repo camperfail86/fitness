@@ -55,7 +55,7 @@
         </div>
         <div class="gym__media">
           <picture>
-            <source media="(max-width: 767px)" srcset="./img/images/gym-mobile.jpg">
+            <!-- <source media="(max-width: 767px)" srcset="./img/images/gym-mobile.jpg"> -->
             <source media="(max-width: 1199px)" srcset="./img/images/gym-tablet.jpg">
             <img class="gym__image" width="660" height="401" src="./img/images/gym.jpg" alt="Тренажерный зал.">
           </picture>
@@ -72,12 +72,13 @@
           <h2 class="abonements__title">Абонементы</h2>
           <nav class="abonements__nav">
             <ul class="abonements__list">
-              <li class="abonements__item abonements__item--active" id="one-month" tabindex="0">1&nbsp;месяц</li>
-              <li class="abonements__item" id="six-month" tabindex="0">6&nbsp;месяцев</li>
-              <li class="abonements__item" id="twelf-month" tabindex="0">12&nbsp;месяцев</li>
+              <li class="abonements__item abonements__item--active" data-tab="#one-month" tabindex="0">1&nbsp;месяц</li>
+              <li class="abonements__item" data-tab="#six-month" tabindex="0">6&nbsp;месяцев</li>
+              <li class="abonements__item" data-tab="#twelf-month" tabindex="0">12&nbsp;месяцев</li>
             </ul>
           </nav>
-          <div class="abonements__content">
+
+          <div class="abonements__content abonements__content--one-month abonements__tab-active" id="one-month">
             <section class="abonements__treners treners" tabindex="0">
               <h3 class="treners__title">С&nbsp;тренером</h3>
               <p class="treners__text">12&nbsp;занятий</p>
@@ -106,7 +107,68 @@
               <a class="full-day__button" href="#">купить абонемент</a>
             </section>
           </div>
+
+          <div class="abonements__content abonements__content--six-month" id="six-month">
+            <section class="abonements__treners treners" tabindex="0">
+              <h3 class="treners__title">С&nbsp;тренером</h3>
+              <p class="treners__text">12&nbsp;занятий</p>
+              <div>
+                <span class="treners__price treners__price--1 treners__price--active">27000</span><span class="treners__price-ruble">₽</span>
+                <div class="treners__price--1-background">2700</div>
+              </div>
+              <a class="treners__button" href="#">купить абонемент</a>
+            </section>
+            <section class="abonements__day day" tabindex="0">
+              <h3 class="day__title">Дневной</h3>
+              <p class="day__text">с&nbsp;8:00 до&nbsp;17:00</p>
+              <div>
+                <span class="day__price day__price--1 day__price--active">9200</span><span class="day__price-ruble">₽</span>
+                <div class="day__price--1-background">9200</div>
+              </div>
+              <a class="day__button" href="#">купить абонемент</a>
+            </section>
+            <section class="abonements__full-day full-day" tabindex="0">
+              <h3 class="full-day__title">Полный день</h3>
+              <p class="full-day__text">с&nbsp;8:00 до&nbsp;22:00</p>
+              <div>
+                <span class="full-day__price full-day__price--1 full-day__price--active">14200</span><span class="full-day__price-ruble">₽</span>
+                <div class="full-day__price--1-background">14200</div>
+              </div>
+              <a class="full-day__button" href="#">купить абонемент</a>
+            </section>
+          </div>
+
+          <div class="abonements__content abonements__content--twelf-month" id="twelf-month">
+            <section class="abonements__treners treners" tabindex="0">
+              <h3 class="treners__title">С&nbsp;тренером</h3>
+              <p class="treners__text">12&nbsp;занятий</p>
+              <div>
+                <span class="treners__price treners__price--1 treners__price--active">53000</span><span class="treners__price-ruble">₽</span>
+                <div class="treners__price--1-background">53000</div>
+              </div>
+              <a class="treners__button" href="#">купить абонемент</a>
+            </section>
+            <section class="abonements__day day" tabindex="0">
+              <h3 class="day__title">Дневной</h3>
+              <p class="day__text">с&nbsp;8:00 до&nbsp;17:00</p>
+              <div>
+                <span class="day__price day__price--1 day__price--active">17500</span><span class="day__price-ruble">₽</span>
+                <div class="day__price--1-background">17500</div>
+              </div>
+              <a class="day__button" href="#">купить абонемент</a>
+            </section>
+            <section class="abonements__full-day full-day" tabindex="0">
+              <h3 class="full-day__title">Полный день</h3>
+              <p class="full-day__text">с&nbsp;8:00 до&nbsp;22:00</p>
+              <div>
+                <span class="full-day__price full-day__price--1 full-day__price--active">26000</span><span class="full-day__price-ruble">₽</span>
+                <div class="full-day__price--1-background">26000</div>
+              </div>
+              <a class="full-day__button" href="#">купить абонемент</a>
+            </section>
+          </div>
         </div>
+
       </section>
       <section class="promo">
         <div class="promo__left">

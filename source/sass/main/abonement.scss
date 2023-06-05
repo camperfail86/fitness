@@ -117,8 +117,13 @@
   }
 
   .abonement__image {
-    height: 299px;
-    width: 290px;
+    width: 100%;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 399px) {
+  .abonement__image {
+    height: 299px;
   }
 }

@@ -239,13 +239,16 @@
   }
 
   .gym__media {
-    width: 320px;
     margin: 0 auto;
+    justify-content: center;
+    width: auto;
   }
 
   .gym__image {
-    width: 320px;
+    width: 100%;
+    object-fit: cover;
     height: 313px;
+    background-position: 10% 10%;
   }
 
   .gym {
@@ -270,7 +273,7 @@
   }
 
   .gym__position {
-    left: 0;
+    left: calc(50% - 160px);
     bottom: -119px;
   }
 
